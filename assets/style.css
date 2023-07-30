@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  font-family: "Open Sans", sans-serif;
+}
+
+.background_img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  object-fit: cover;
+}
+
+.header_container {
+  position: relative;
+  padding: 0 4%;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1320px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.content_link,
+.content_link_2 {
+  color: #fbd784;
+  font-family: "Open Sans";
+  font-size: clamp(10px, 3vw, 18px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.content_link:hover,
+.content_link_2:hover {
+  color: #cb9925df;
+}
+
+.content_title {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: clamp(32px, 8vw, 64px);
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.content_paragraph {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: clamp(10px, 3vw, 18px);
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 25px;
+}
+
+.content_link_2 {
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+/* Header Section */
+
+.header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 40px 0;
+  background: transparent;
+  z-index: 999;
+}
+
+.header_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_logo_title a {
+  text-decoration: none;
+  color: white;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.24px;
+  text-transform: capitalize;
+}
+
+.search_btn {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.search_btn:hover {
+  color: rgba(128, 128, 128, 0.799);
+}
+
+.search_button {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.search_button h3 {
+  color: rgba(128, 128, 128, 0.799);
+  font-family: "Open Sans";
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  list-style: none;
+}
+
+.navigation a,
+.rotate_title {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.navigation a:hover {
+  color: #b26e21;
+}
+
+/* Home Section 1 */
+
+.home_section_1 {
+  position: relative;
+  margin-bottom: 600px;
+}
+
+.main_section_content {
+  padding-top: 230px;
+  transform: translateX(-220px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: start;
+  margin-bottom: 45px;
+}
+
+.link_image {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.main_title {
+  color: white;
+  font-family: "Open Sans";
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 100px;
+  text-transform: capitalize;
+  margin-left: 120px;
+}
+
+.main_title span {
+  font-size: 88px;
+  font-weight: 400;
+}
+
+.scroll_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.scroll_button .content_link {
+  color: white;
+  font-weight: 600;
+}
+
+.scroll_button .content_link:hover {
+  color: #3e3e3e;
+}
+
+.social_networks {
+  position: absolute;
+  top: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.rotate_title {
+  transform: rotate(90deg);
+  margin-bottom: 35px;
+}
+
+/* Home Section 2 */
+
+.home_section_2,
+.home_section_3,
+.home_section_4 {
+  position: relative;
+  margin-bottom: 200px;
+}
+
+.content_section_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+
+.fort_section_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Home Section 3 */
+
+.content_section_2 {
+  position: relative;
+}
+
+.content_section_2 > img {
+  width: 1300px;
+}
+
+.inner_content {
+  position: absolute;
+  bottom: 20px;
+  padding: 0 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Home Section 4 */
+
+.content_section_3 > img {
+    order: 1;
+}
