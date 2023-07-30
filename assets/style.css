@@ -1,3 +1,8 @@
+:root {
+  --text-color: white;
+  --link-color: #fbd784;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -33,7 +38,7 @@ body {
 
 .content_link,
 .content_link_2 {
-  color: #fbd784;
+  color: var(--link-color);
   font-family: "Open Sans";
   font-size: clamp(10px, 3vw, 18px);
   font-style: normal;
@@ -49,7 +54,7 @@ body {
 }
 
 .content_title {
-  color: #fff;
+  color: var(--text-color);
   font-family: "Open Sans";
   font-size: clamp(32px, 8vw, 64px);
   font-weight: 700;
@@ -57,7 +62,7 @@ body {
 }
 
 .content_paragraph {
-  color: #fff;
+  color: var(--text-color);
   font-family: "Open Sans";
   font-size: clamp(10px, 3vw, 18px);
   font-weight: 600;
@@ -90,7 +95,7 @@ body {
 
 .header_logo_title a {
   text-decoration: none;
-  color: white;
+  color: var(--text-color);
   font-family: "Open Sans";
   font-size: 24px;
   font-weight: 700;
@@ -99,7 +104,7 @@ body {
 }
 
 .search_btn {
-  color: white;
+  color: var(--text-color);
   font-size: 20px;
   cursor: pointer;
 }
@@ -131,7 +136,7 @@ body {
 .navigation a,
 .rotate_title {
   text-decoration: none;
-  color: #fff;
+  color: var(--text-color);
   font-family: "Open Sans";
   font-size: 18px;
   font-weight: 600;
@@ -167,7 +172,7 @@ body {
 }
 
 .main_title {
-  color: white;
+  color: var(--text-color);
   font-family: "Open Sans";
   font-size: 96px;
   font-weight: 700;
@@ -189,7 +194,7 @@ body {
 }
 
 .scroll_button .content_link {
-  color: white;
+  color: var(--text-color);
   font-weight: 600;
 }
 
@@ -257,5 +262,181 @@ body {
 /* Home Section 4 */
 
 .content_section_3 > img {
-    order: 1;
+  order: 1;
+}
+
+/* Footer Section */
+
+.footer {
+  position: relative;
+}
+
+.footer_logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.373);
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+
+.footer_logo_title {
+  color: var(--text-color);
+  font-family: "Open Sans";
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 0.48px;
+  text-transform: capitalize;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.btn {
+  padding: 20px 25px;
+  border: 1px solid var(--link-color);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.7s;
+}
+
+.btn a {
+  color: var(--text-color);
+  font-family: "Open Sans";
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+  text-decoration: none;
+  transition: all 0.7s;
+}
+
+.btn:hover {
+  background: var(--link-color);
+  border: 1px solid var(--link-color);
+}
+
+.btn:hover a {
+  color: black;
+}
+
+.footer_menus {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 100px;
+}
+
+.footer_menu_title {
+  color: var(--text-color);
+  font-family: "Open Sans";
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+.footer_menu_subtitle,
+.help_menu a,
+.about_menu a {
+  color: var(--link-color);
+  font-family: "Open Sans";
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: -0.205px;
+}
+
+.help_menu a:hover,
+.about_menu a:hover,
+.terms a:hover {
+  color: var(--link-color);
+}
+
+.help_menu a,
+.about_menu a {
+  color: var(--text-color);
+  font-weight: 400;
+  letter-spacing: -0.205px;
+  text-decoration: none;
+}
+
+.about_menu,
+.help_menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer_forms {
+  display: flex;
+  align-items: center;
+}
+
+.submit_button {
+  background: black;
+  border: none;
+  cursor: pointer;
+}
+
+.submit_button > img {
+  transition: all 0.5s;
+}
+
+.submit_button:hover img {
+  transform: scale(1.1);
+}
+
+.email {
+  width: 250px;
+  height: 68px;
+  padding-left: 16px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.53);
+}
+
+.email::placeholder {
+  color: var(--text-color);
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: -0.205px;
+}
+
+.copyright_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.terms {
+  display: flex;
+  gap: 40px;
+}
+
+.terms a {
+  color: var(--text-color);
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: -0.205px;
+  text-decoration: none;
+}
+
+.footer_socials {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.copyright {
+  color: var(--text-color);
+  font-family: "Open Sans";
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 50px;
 }

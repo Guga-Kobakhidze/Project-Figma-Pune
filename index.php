@@ -83,14 +83,4 @@
         </div>
     </div>
 </section>
-<footer class="footer">
-    <div class="container">
-        <div class="footer_section">
-
-        </div>
-    </div>
-</footer>
-
-</body>
-
-</html>
+<?php include_once "footer.php" ?>
