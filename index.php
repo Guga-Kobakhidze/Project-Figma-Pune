@@ -26,7 +26,7 @@
         <div class="content_section_1">
             <img src="./assets/images/FirstSectionImage.png" alt="FirstSectionIMG">
             <div class="fort_section_content">
-                <div class="link_image">
+                <div class="link_image link_image_only">
                     <img src="./assets/images/line.png" alt="line">
                     <a class="content_link_2" href="#">KING OF FORT</a>
                 </div>
@@ -67,7 +67,7 @@
         <div class="content_section_1 content_section_3">
             <img src="./assets/images/thirdSectionImage.png" alt="FirstSectionIMG">
             <div class="fort_section_content">
-                <div class="link_image">
+                <div class="link_image link_image_only">
                     <img src="./assets/images/line.png" alt="line">
                     <a class="content_link_2" href="#">f.c. road pune</a>
                 </div>
